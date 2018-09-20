@@ -38,7 +38,8 @@ setUpDatabase();
 app.use(bodyParser.json());
 
 // Use Routes
-app.use('/', deedAPIRoutes);
+app.use('/api', deedAPIRoutes);
+app.use('/', );
 
 console.log(`Listener started on port ${port}...`);
 app.listen(port);
